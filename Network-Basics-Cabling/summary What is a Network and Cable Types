@@ -1,0 +1,32 @@
+🇮🇱 סיכום בעברית:
+רשת מחשבים היא קבוצת מחשבים המחוברים ביניהם עם כבלים (Wired) או בצורה אלחוטית (Wireless). מטרות הרשת הן: שיתוף חומרה (כמו מדפסת אחת למספר עובדים), שיתוף מידע (עבודה משותפת על קבצים ללא צורך בדיסק-און-קי), והגנה על מידע (גיבוי מרכזי בשרת).
+הרשת מורכבת מ-4 רכיבים בסיסיים:
+
+מכשירי קצה (End Devices): מחשבים, טלפונים ומדפסות.
+
+מדית רשת (Network Media): כבלי נחושת (Copper) או סיבים אופטיים (Fiber Optics). כבלי נחושת נפוצים הם מסוג "זוג שזור" (Twisted Pair) כמו Cat5e ו-Cat6, המוגבלים למרחק של עד 100 מטרים. סיבים אופטיים מעבירים מידע בעזרת אור ומיועדים למרחקים עצומים במהירות האור.
+
+כרטיס רשת (NIC - Network Interface): מתרגם את שפת המחשב (ביטים של 0 ו-1) לאותות פיזיים (חשמל, אור או רדיו).
+
+פרוטוקול רשת (Network Protocol): חוקי התקשורת המוסכמים שמאפשרים למכשירים להבין זה את זה (כמו פרוטוקול ה-IP).
+
+🇺🇸 English Summary:
+A computer network is a group of connected devices, either wired or wireless. The primary goals of a network are: sharing hardware (e.g., using one printer for multiple employees), sharing data (collaborating without flash drives), and protecting data (centralized backups on a server).
+A network consists of 4 basic components:
+
+End Devices: PCs, phones, and printers.
+
+Network Media: Copper cables or fiber optics. Common copper cables are "Twisted Pair" (like Cat5e and Cat6), which are limited to a maximum distance of 100 meters. Fiber optics transmit data using light pulses and are designed for huge distances at the speed of light.
+
+NIC (Network Interface Card): Translates computer binary (0s and 1s) into physical signals (electricity, light, or radio waves).
+
+Network Protocol: Agreed-upon communication rules that allow devices to understand each other (such as the IP protocol).
+
+🔑 מושגי מפתח (Key Terms):
+End Devices (רכיבי קצה): המכשירים שיוצרים או מקבלים את המידע בסוף הרשת. (Devices that generate or receive data at the edge of the network).
+
+Twisted Pair (זוג שזור): כבלי נחושת נפוצים לרשתות מקומיות. (Common copper cables for local networks).
+
+Fiber Optics (סיבים אופטיים): כבלים מהירים במיוחד העשויים זכוכית ומעבירים אור. (Ultra-fast cables made of glass that transmit light).
+
+NIC (כרטיס רשת): רכיב החומרה המקשר בין המחשב לכבל/לאלחוט. (The hardware component connecting the PC to the cable or wireless medium).
