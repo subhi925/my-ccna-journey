@@ -1,3 +1,35 @@
+# My CCNA Journey
+
+Welcome to my CCNA learning journey.
+
+This repository documents my progress while studying networking fundamentals and preparing for the Cisco CCNA certification.
+
+## Repository Goals
+
+- Build a solid networking foundation
+- Practice troubleshooting methodology
+- Learn through Packet Tracer labs
+- Document networking concepts
+- Connect networking knowledge with real-world Technical Support and Application Support scenarios
+
+## Topics Covered
+
+- OSI Model
+- TCP/IP
+- LAN / WAN
+- Switching
+- Routing
+- VLANs
+- Subnetting
+- DNS
+- DHCP
+- NAT
+- IPv4 / IPv6
+- Packet Tracer Labs
+- Troubleshooting Scenarios
+
+New content is added after every study session.
+
 # 🌐 My CCNA & IT Learning Journey (המסע שלי ללימוד רשתות ו-CCNA)
 
 Welcome to my personal study repository! Here, I document my progress based on the **IT Dose** CCNA curriculum. This repository blends foundational networking concepts with practical troubleshooting skills, focusing on how these concepts apply to **Application Support Engineering**.
