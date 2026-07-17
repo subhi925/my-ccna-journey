@@ -1,0 +1,42 @@
+🇮🇱 סיכום בעברית:
+כאשר מכשיר שולח מידע ברשת, הוא יכול לעשות זאת בשלוש דרכים:
+
+Unicast (חד-נתיב): שליחת מידע ממכשיר אחד למכשיר ספציפי אחר (אחד לאחד).
+
+Multicast (רב-נתיב): שליחת מידע לקבוצה מוגדרת של מכשירים ברשת (אחד לרבים, כמו הודעה בקבוצת וואטסאפ).
+
+Broadcast (שידור לכולם): שליחת מידע לכל המכשירים הקיימים באותה הרשת (אחד לכולם).
+
+בנוסף, ישנם שלושה מצבי העברת מידע פיזיים (Duplex):
+
+Simplex (חד-כיווני): תקשורת בכיוון אחד בלבד (כמו טלוויזיה או רדיו - אנחנו רק מקבלים מידע ולא יכולים להגיב).
+
+Half-Duplex (חצי-דו-כיווני): תקשורת בשני הכיוונים, אך לא בו-זמנית (כמו מכשיר קשר - רק אחד יכול לדבר בכל רגע).
+
+Full-Duplex (דו-כיווני מלא): תקשורת בשני הכיוונים בו-זמנית (כמו שיחת טלפון שבה שני הצדדים יכולים לדבר ולשמוע ביחד).
+
+🇺🇸 English Summary:
+When a device sends data over a network, it can do so in three ways:
+
+Unicast: Sending data from one device to another specific device (1-to-1).
+
+Multicast: Sending data to a specific group of devices on the network (1-to-many, like a WhatsApp group message).
+
+Broadcast: Sending data to all existing devices on the network (1-to-all).
+
+Additionally, there are three modes of physical data transmission (Duplex):
+
+Simplex: One-way communication only (like television or radio, where we only receive data and cannot respond).
+
+Half-Duplex: Two-way communication, but not at the same time (like a walkie-talkie, where only one person can speak at a moment).
+
+Full-Duplex: Simultaneous two-way communication (like a phone call, where both sides can talk and listen at the exact same time).
+
+🔑 מושגי מפתח (Key Terms):
+Unicast (חד-נתיב): תקשורת של אחד מול אחד. (One-to-one communication).
+
+Multicast (רב-נתיב): תקשורת של אחד מול קבוצה מוגדרת. (One-to-many communication).
+
+Broadcast (שידור לכולם): שידור שמגיע לכל המכשירים ברשת. (One-to-all communication).
+
+Full-Duplex (דופלקס מלא): שליחה וקבלה בו-זמנית. (Simultaneous sending and receiving).
