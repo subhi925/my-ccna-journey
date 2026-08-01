@@ -1,0 +1,39 @@
+# Lesson 07: Network Topologies
+
+## Overview
+A network topology defines how nodes, devices, and connections are logically or physically arranged relative to each other in a computer network.
+
+## Core Topologies
+
+### 1. Star Topology
+* **Description:** All end devices connect directly to a central networking device (typically a Switch or Hub).
+* **Pros:** Easy to troubleshoot, isolated device failures (if one cable fails, only that device disconnects).
+* **Cons:** Single Point of Failure (SPOF)—if the central switch fails, the entire network drops.
+
+### 2. Bus Topology
+* **Description:** All nodes are connected to a single central cable (the "backbone") with terminators at both ends.
+* **Pros:** Inexpensive, simple, requires minimal cabling.
+* **Cons:** Hard to isolate faults; a break in the backbone cable downs the entire network.
+
+### 3. Ring Topology
+* **Description:** Devices are connected sequentially in a circular loop. Data travels in one direction (or two in dual-ring).
+* **Pros:** Reduced collision probability compared to bus.
+* **Cons:** Failure of a single node or cable break can interrupt the entire ring.
+
+### 4. Mesh Topology (Full vs. Partial)
+* **Description:** * **Full Mesh:** Every device is connected to every other device.
+  * **Partial Mesh:** Redundant connections exist between critical devices, but not all.
+* **Pros:** Maximum redundancy, high availability, fault tolerance.
+* **Cons:** Extremely expensive, complex cabling and configuration.
+
+### 5. Hybrid Topology
+* **Description:** A combination of two or more different topologies (e.g., Star-Bus or Star-Ring).
+
+---
+
+## Technical Glossary
+* **Physical Topology:** The physical layout of devices, cables, and infrastructure.
+* **Logical Topology:** The path that data takes through the network (e.g., how signals travel).
+* **Single Point of Failure (SPOF):** A critical component whose failure causes the entire system or network to stop functioning.
+* **Redundancy:** Duplicate equipment or links configured to ensure network availability during failures.
+* **Fault Tolerance:** The ability of a system to continue operating without interruption when a component fails.
