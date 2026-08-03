@@ -226,3 +226,57 @@ Simulation tools like Packet Tracer mirror real-world application monitoring and
 
 Enterprise applications running in production environments require high availability (HA). Understanding network topology helps support engineers evaluate if an outage is localized or total. If an app deployment relies on a Star Topology with a single central switch (SPOF), a switch crash brings down the entire application stack. Knowing how topology redundancy is designed allows support teams to set realistic SLAs and troubleshoot failover issues when redundant links fail.  
 אפליקציות ארגוניות בסביבות ייצור (Production) דורשות זמינות גבוהה (High Availability). הבנת טופולוגיית הרשת עוזרת לאנשי תמיכה להבין האם נפילה היא מקומית או כוללת. אם האפליקציה רצה על טופולוגיית Star בעלת מתג מרכזי יחיד (SPOF), קריסה שלו תפיל את כל האפליקציה. הבנת היתירות (Redundancy) בטופולוגיה מאפשרת לצוותי תמיכה לנהל אירועי ניתוף (Failover) ביעילות כשנתיבי הגיבוי נכנסים לפעולה.
+
+
+---
+
+🎬 Part 8: OSI Model & The 7 Layers
+Hebrew Title: מודל ה-OSI ו-7 השכבות
+
+Core Topic: Detailed breakdown of the Open Systems Interconnection (OSI) 7-layer reference model, Encapsulation and Decapsulation processes, Protocol Data Units (PDUs), and real-world troubleshooting across layers.
+
+נושא מרכזי: ניתוח מעמיק של מודל 7 השכבות (OSI Model), תהליכי הכמיסה והפירוק (Encapsulation / Decapsulation), יחידות מידה בכל שכבה (PDUs), ומתודולוגיית פתרון תקלות מדורגת.
+
+🔑 Key Terms (מושגי מפתח):
+OSI Model (Open Systems Interconnection): A conceptual 7-layer framework created by ISO to standardize network communication between diverse systems.
+
+בעברית: מודל ייחוס בנות 7 שכבות שהוגדר ע"י ארגון ISO כדי לאפשר לתקשורת בין מערכות שונות ומגוונות לעבוד בצורה יציבה ואחידה.
+
+Encapsulation & Decapsulation: Encapsulation wraps data with layer headers/trailers when sending (Layers 7→1); Decapsulation strips these headers as data moves up on the receiver side (Layers 1→7).
+
+בעברית: הכמיסה (Encapsulation) היא תהליך אריזת המידע והוספת כותרות (Headers) מהשכבה העליונה לתחתונה בשידור; פירוק הכמיסה (Decapsulation) מוריד את הכותרות בעת הקליטה.
+
+PDU (Protocol Data Unit): The generic term for data format at each OSI layer: Data (L7-L5), Segment (L4), Packet (L3), Frame (L2), and Bits (L1).
+
+בעברית: יחידת נתוני פרוטוקול בכל שכבה: Data בשכבות התוכנה (L7-L5), סגמנט בשינוע (L4), פקט/מנה ברשת (L3), פריים/מסגרת בערוץ הנתונים (L2), וביטים בשכבה הפיזית (L1).
+
+Software Layers (Layers 7, 6, 5): Application (L7), Presentation (L6), and Session (L5) layers that handle user interaction, data formatting/encryption, and session management.
+
+בעברית: שכבות התוכנה - שכבת היישום (L7), המצג (L6) והשיחה (L5) העוסקות באינטראקציה מול המשתמש, הצפנה/קידוד וניהול דיאלוגים.
+
+Transport Layer (Layer 4): Responsible for end-to-end communication, port addressing, flow control, and data reliability using TCP (Reliable) or UDP (Fast/Connectionless).
+
+בעברית: שכבת השינוע (L4) - אחראית על ניהול התקשורת מקצה לקצה, עבודה מול פורטים (Port Numbers), ובחירה בין TCP (אמין ומאומת) ל-UDP (מהיר ללא אימות).
+
+Network Layer (Layer 3): Handles logical IP addressing, routing paths, and packet movement across different subnets (Routers operate here).
+
+בעברית: שכבת הרשת (L3) - מנהלת כתובות IP לוגיות וסיווג ניתוב בין רשתות שונות (שכבת העבודה של ראוטרים).
+
+Data Link & Physical Layers (Layers 2 & 1): Layer 2 handles physical MAC addressing and framing (Switches operate here); Layer 1 transmits raw bitstreams over copper/fiber/wireless media.
+
+בעברית: שכבת ערוץ הנתונים (L2 - עבודה מול כתובות MAC ומתגים) והשכבה הפיזית (L1 - העברת ביטים חשמליים/אופטיים במדיה).
+
+💡 Application Support Connection (הקשר לתמיכת אפליקציות):
+Understanding the 7 layers of the OSI model is the ultimate framework for Application Support Engineers when isolating system issues. When an application fails, structured troubleshooting helps you pinpoint the exact layer of failure:
+
+Layer 7 (Application): Is the Web API returning HTTP 500 or 404 errors?
+
+Layer 6 (Presentation): Is there an SSL/TLS certificate validation failure or JSON parsing mismatch?
+
+Layer 4 (Transport): Is a firewall or security group blocking the TCP/UDP port (e.g., Port 443, 3306)?
+
+Layer 3 (Network): Can the server reach the database IP address via ping / routing tables?
+
+Layer 1/2 (Physical/Data Link): Is the interface suffering from CRC errors, bad cables, or duplicate MACs?
+
+בעבודה כאיש תמיכת אפליקציות, מודל ה-OSI הוא כלי הדיאגנוסטיקה החשוב ביותר לבידוד תקלות. כשאפליקציה מפסיקה לעבוד, עבודה לפי השכבות מונעת ניחושים: בשכבה 7 נבדוק שגיאות HTTP או תגובות API; בשכבה 6 נבדוק תקינות תעודות SSL/TLS; בשכבה 4 נבדוק אם הפורט ב-TCP/UDP פתוח בחומת האש; בשכבה 3 נוודא קשר IP וניתוב; ובשכבות 1-2 נוודא תקינות כבלים וממשקים.
